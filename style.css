@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Inter&display=swap");
+/*
+ * font-family: 'DM Sans', sans-serif;
+ * font-family: 'Inter', sans-serif;
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --contrast-color: rgba(218, 165, 32, 1);
+  --contrast-color-hover: rgba(218, 165, 32, 0.3);
+  --main-background: rgba(13, 13, 13, 1);
+  --text-color: rgba(255, 255, 255, 1);
+  --background: rgba(21, 21, 21, 1);
+}
+
+body {
+  background: var(--background);
+  font-size: 1.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 9rem;
+  justify-content: space-between;
+}
+
+.main {
+  background: var(--main-background);
+  color: var(--text-color);
+  margin-bottom: 10rem;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  width: min(46.2rem, 90%);
+  margin: 0 auto;
+  position: relative;
+}
+
+.main h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  width: 26.5rem;
+}
+
+.main h1 span {
+  color: var(--contrast-color);
+}
+
+.main p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0.5rem 0 3rem;
+}
+
+.main button {
+  border: 0;
+  background: var(--contrast-color);
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: outline 0.3s;
+}
+
+.main button:hover {
+  outline: 2px solid var(--contrast-color-hover);
+}
+
+.verse-wrapper h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: var(--contrast-color);
+}
+
+.verse-wrapper h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.verse-wrapper p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 1rem 0 4rem;
+}
